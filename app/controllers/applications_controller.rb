@@ -11,6 +11,7 @@ class ApplicationsController < ApplicationController
       else
 
       end
+    end
   #  @application.request = request
    # if @application.deliver
    #   flash.now[:error] = nil
