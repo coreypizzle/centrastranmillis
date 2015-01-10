@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Centra</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="header">
+  <div class="inner_header">
+    <div class="logo">
+    <%= link_to root_path do %>
+      <%= image_tag "logo.png" %>
+    <% end %>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><%= link_to "Recruitment", new_application_path %></li>
+        <li>Opening Hours</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container">
+<%= yield %>
+</div>
+
+</body>
+</html>

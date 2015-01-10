@@ -1,0 +1,44 @@
+<center>
+<h1>Online Application Form</h1>
+
+<%= simple_form_for @application, :html => {:class => 'form-horizontal' } do |f| %>
+  <label>Position Applied For : </label>
+  <%= f.input :positionappliedfor, :required => true, :label => false %></br>
+  <label>Full Name : </label>
+  <%= f.input :name, :required => true, :label => false %></br>
+  <label>Contact Telephone Number : </label>
+  <%= f.input :telephone, :required => true, :label => false %></br>
+  <label>Email Address : </label>
+  <%= f.input :email, :required => true, :label => false %></br>
+  <label>Address : </label>
+  <%= f.input :address, :required => true, :label => false, :as => :text, :class => "fieldarea" %></br>
+  <label>Postal Code : </label>
+  <%= f.input :postcode, :required => true, :label => false %></br>
+  <h2>Education and Training</h2>
+  <label>Secondary School Names : </label>
+  <%= f.input :secondaryschool, :required => true, :label => false %></br>
+  <label>Dates Started and Finished : </label>
+  <%= f.input :datestartandfinished, :required => true, :label => false %></br>
+  <label>Examinations and Results : </label>
+  <%= f.input :examinationsandresults, :required => true, :label => false, :as => :text, :class => "fieldarea" %></br>
+  <label>Further Education and Training : </label>
+  <%= f.input :furtheredandtraining, :required => true, :label => false %></br>
+  <label>Dates Started and Finished : </label>
+  <%= f.input :datestartandfinishedtwo, :required => true, :label => false %></br>
+  <label>Courses and Qualifications : </label>
+  <%= f.input :coursesandqualifications, :required => true, :label => false, :as => :text, :class => "fieldarea" %></br>
+  <h2>Employment History</h2>
+  <label>Employer Name : </label>
+  <%= f.input :employername, :required => true, :label => false %></br>
+  <label>Employer Address : </label>
+  <%= f.input :employeraddress, :required => true, :label => false, :as => :text, :class => "fieldarea" %></br>
+  <label>From and To : </label>
+  <%= f.input :fromandto, :required => true, :label => false %></br>
+  <label>Description of Role : </label>
+  <%= f.input :descriptionofrole, :required => true, :label => false %></br>
+  <label>Reason For Leaving : </label>
+  <%= f.input :reasonforleaving, :required => true, :label => false %></br>
+
+  <%= f.button :submit, 'Apply now', :class=> "btn btn-primary marg_bottom submit" %>
+<% end %>
+</center>
