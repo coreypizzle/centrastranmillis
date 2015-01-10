@@ -13,11 +13,11 @@ Rails.application.configure do
   config.action_mailer.default :charset => "utf-8"
 
   config.action_mailer.smtp_settings = {
-    :address => 'smtp.sendgrid.com',
+    :address => 'smtp.postmarkapp.com',
     :port => "587",
     :authentication => :plain,
-    :user_name => "app33153825@heroku.com",
-    :password => "6xqoc8vn",
+    :user_name => "0957d2e8-998b-40d9-845c-c0175caf7c91",
+    :password => "0957d2e8-998b-40d9-845c-c0175caf7c91",
     :enable_starttls_auto => true,
 
   }
