@@ -12,6 +12,16 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.default :charset => "utf-8"
 
+  config.action_mailer.smtp_settings = {
+    :address => 'smtp.sendgrid.com',
+    :port => "587",
+    :authentication => :plain,
+    :user_name => ENV['SENDGRID_USERNAME'],
+    :password => ENV['SENDGRID_PASSWORD'],
+    :enable_starttls_auto => true
+
+  }
+
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
