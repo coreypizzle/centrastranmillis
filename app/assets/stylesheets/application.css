@@ -101,11 +101,11 @@ li {
 
 .multi {
   overflow: hidden;
-  width: 260px;
-  height: 235px;
+  width: 182px;
+  height: 165px;
   border: 2px solid #7f9469;
   border-radius: 30px;
-  margin: 0 80px 0 0;
+  margin: 0 28px 0 0;
 }
 
 .multi_fin {
@@ -236,5 +236,5 @@ hr {
 }
 
 .text_sec {
-  height: 255px;
+  height: 325px;
 }
