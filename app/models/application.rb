@@ -17,6 +17,18 @@ class Application < MailForm::Base
   attribute :descriptionofrole
   attribute :reasonforleaving
 
+  attribute :employernametwo
+  attribute :employeraddresstwo
+  attribute :fromandtotwo
+  attribute :descriptionofroletwo
+  attribute :reasonforleavingtwo
+
+  attribute :employernamethree
+  attribute :employeraddressthree
+  attribute :fromandtothree
+  attribute :descriptionofrolethree
+  attribute :reasonforleavingthree
+
 
   # Declare the e-mail headers. It accepts anything the mail method
   # in ActionMailer accepts.
@@ -24,7 +36,7 @@ class Application < MailForm::Base
     {
       :subject => "My Contact Form",
       :to => "coreypizzle@gmail.com",
-      :from => %("#{name}" <#{email}>)
+      :from => %("Automated Service" <info@centrastranmillis.com>)
     }
   end
 end

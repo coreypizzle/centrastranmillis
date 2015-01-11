@@ -1,44 +1,121 @@
-<center>
-<h1>Online Application Form</h1>
+<div class="apply_form">
+<%= image_tag "apply_header.png", :class => "img_header" %>
+
 
 <%= simple_form_for @application, :html => {:class => 'form-horizontal' } do |f| %>
-  <label>Position Applied For : </label>
-  <%= f.input :positionappliedfor, :required => true, :label => false %></br>
-  <label>Full Name : </label>
-  <%= f.input :name, :required => true, :label => false %></br>
-  <label>Contact Telephone Number : </label>
-  <%= f.input :telephone, :required => true, :label => false %></br>
-  <label>Email Address : </label>
-  <%= f.input :email, :required => true, :label => false %></br>
-  <label>Address : </label>
-  <%= f.input :address, :required => true, :label => false, :as => :text, :class => "fieldarea" %></br>
-  <label>Postal Code : </label>
-  <%= f.input :postcode, :required => true, :label => false %></br>
-  <h2>Education and Training</h2>
-  <label>Secondary School Names : </label>
-  <%= f.input :secondaryschool, :required => true, :label => false %></br>
-  <label>Dates Started and Finished : </label>
-  <%= f.input :datestartandfinished, :required => true, :label => false %></br>
-  <label>Examinations and Results : </label>
-  <%= f.input :examinationsandresults, :required => true, :label => false, :as => :text, :class => "fieldarea" %></br>
-  <label>Further Education and Training : </label>
-  <%= f.input :furtheredandtraining, :required => true, :label => false %></br>
-  <label>Dates Started and Finished : </label>
-  <%= f.input :datestartandfinishedtwo, :required => true, :label => false %></br>
-  <label>Courses and Qualifications : </label>
-  <%= f.input :coursesandqualifications, :required => true, :label => false, :as => :text, :class => "fieldarea" %></br>
-  <h2>Employment History</h2>
-  <label>Employer Name : </label>
-  <%= f.input :employername, :required => true, :label => false %></br>
-  <label>Employer Address : </label>
-  <%= f.input :employeraddress, :required => true, :label => false, :as => :text, :class => "fieldarea" %></br>
-  <label>From and To : </label>
-  <%= f.input :fromandto, :required => true, :label => false %></br>
-  <label>Description of Role : </label>
-  <%= f.input :descriptionofrole, :required => true, :label => false %></br>
-  <label>Reason For Leaving : </label>
-  <%= f.input :reasonforleaving, :required => true, :label => false %></br>
+  <div class="field">
+    <label>Position Applied For : </label>
+    <%= f.input :positionappliedfor, :required => false, :label => false %></br>
+  </div>
+  <div class="field">
+    <label>Full Name : </label>
+    <%= f.input :name, :required => false, :label => false %></br>
+  </div>
+  <div class="field">
+    <label>Contact Telephone Number : </label>
+    <%= f.input :telephone, :required => false, :label => false %></br>
+  </div>
+  <div class="field">
+    <label>Email Address : </label>
+    <%= f.input :email, :required => false, :label => false %></br></br>
+  </div>
+  <div class="field_area">
+    <label>Address : </label>
+    <%= f.input :address, :required => false, :label => false, :as => :text, :class => "fieldarea" %></br>
+  </div>
+  <div class="field">
+    <label>Postal Code : </label>
+    <%= f.input :postcode, :required => false, :label => false %></br>
+  </div>
+  <%= image_tag "edu_header.png", :class => "img_header" %>
+  <div class="field">
+    <label>Secondary School Names : </label>
+    <%= f.input :secondaryschool, :required => false, :label => false %></br>
+  </div>
+  <div class="field">
+    <label>Dates Started and Finished : </label>
+    <%= f.input :datestartandfinished, :required => false, :label => false %></br></br>
+  </div>
+  <div class="field_area">
+    <label>Examinations and Results : </label>
+    <%= f.input :examinationsandresults, :required => false, :label => false, :as => :text, :class => "fieldarea" %></br>
+  </div>
+  <div class="field">
+    <label>Further Education and Training : </label>
+    <%= f.input :furtheredandtraining, :required => false, :label => false %></br>
+  </div>
+  <div class="field">
+    <label>Dates Started and Finished : </label>
+    <%= f.input :datestartandfinishedtwo, :required => false, :label => false %></br></br>
+  </div>
+  <div class="field_area">
+    <label>Courses and Qualifications : </label>
+    <%= f.input :coursesandqualifications, :required => false, :label => false, :as => :text, :class => "fieldarea" %></br>
+  </div>
+  <%= image_tag "emp_header.png", :class => "img_header" %>
+  <div class="field">
+    <label>Employer Name : </label>
+    <%= f.input :employername, :required => false, :label => false %></br></br>
+  </div>
+  <div class="field_area">
+    <label>Employer Address : </label>
+    <%= f.input :employeraddress, :required => false, :label => false, :as => :text, :class => "fieldarea" %></br>
+  </div>
+  <div class="field">
+    <label>From and To : </label>
+    <%= f.input :fromandto, :required => false, :label => false %></br>
+  </div>
+  <div class="field">
+    <label>Description of Role : </label>
+    <%= f.input :descriptionofrole, :required => false, :label => false %></br>
+  </div>
+  <div class="field">
+    <label>Reason For Leaving : </label>
+    <%= f.input :reasonforleaving, :required => false, :label => false %></br>
+  </div>
+  <hr>
+    <div class="field">
+    <label>Employer Name : </label>
+    <%= f.input :employernametwo, :required => false, :label => false %></br></br>
+  </div>
+  <div class="field_area">
+    <label>Employer Address : </label>
+    <%= f.input :employeraddresstwo, :required => false, :label => false, :as => :text, :class => "fieldarea" %></br>
+  </div>
+  <div class="field">
+    <label>From and To : </label>
+    <%= f.input :fromandtotwo, :required => false, :label => false %></br>
+  </div>
+  <div class="field">
+    <label>Description of Role : </label>
+    <%= f.input :descriptionofroletwo, :required => false, :label => false %></br>
+  </div>
+  <div class="field">
+    <label>Reason For Leaving : </label>
+    <%= f.input :reasonforleavingtwo, :required => false, :label => false %></br>
+  </div>
+  <hr>
+  <div class="field">
+    <label>Employer Name : </label>
+    <%= f.input :employernamethree, :required => false, :label => false %></br></br>
+  </div>
+  <div class="field_area">
+    <label>Employer Address : </label>
+    <%= f.input :employeraddressthree, :required => false, :label => false, :as => :text, :class => "fieldarea" %></br>
+  </div>
+  <div class="field">
+    <label>From and To : </label>
+    <%= f.input :fromandtothree, :required => false, :label => false %></br>
+  </div>
+  <div class="field">
+    <label>Description of Role : </label>
+    <%= f.input :descriptionofrolethree, :required => false, :label => false %></br>
+  </div>
+  <div class="field">
+    <label>Reason For Leaving : </label>
+    <%= f.input :reasonforleavingthree, :required => false, :label => false %></br>
+  </div>
 
   <%= f.button :submit, 'Apply now', :class=> "btn btn-primary marg_bottom submit" %>
 <% end %>
-</center>
+</div>
