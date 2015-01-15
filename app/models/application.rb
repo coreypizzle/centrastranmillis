@@ -36,7 +36,7 @@ class Application < MailForm::Base
     {
       :subject => "My Contact Form",
       :to => "coreypizzle@gmail.com",
-      :from => %("Automated Service" <info@centrastranmillis.com>)
+      :from => %("Automated Service" <mcgoveranmaloneroad@centra.co.uk>)
     }
   end
 end
