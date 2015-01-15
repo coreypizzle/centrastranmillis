@@ -88,7 +88,7 @@ li {
 
 .fb_con img {
   display: inline-block;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 25px auto;
 }
 
 .cuo {
@@ -264,4 +264,12 @@ hr {
   float: left;
   position: relative;
   margin: -148px 0 0 0;
+}
+
+.fbme {
+  color: white;
+}
+
+a.fbme {
+  color: white;
 }
