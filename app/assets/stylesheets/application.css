@@ -239,26 +239,7 @@ hr {
   border: 1px solid #7f9469;
 }
 
-.text_sec {
-  height: 275px;
-  margin: 0 0 53px 0;
-  border-radius: 50px;
-  background-color: #7F9469;
-  z-index: 9;
-  position: relative;
-}
 
-.arrow {
-  background-image: url('arrow.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 198px;
-  width: 189px;
-  position: relative;
-  float: right;
-  z-index: 10;
-  margin: -50px -50px 0 0;
-}
 
 .text_sec img {
   float: left;
@@ -272,4 +253,31 @@ hr {
 
 a.fbme {
   color: white;
+}
+
+@media all and (max-width: 1505px) {
+  .about {
+    width: 50%;
+    float: right;
+  }
+
+  .multi {
+    width: 29%;
+    height: 125px;
+    text-align: right;
+  }
+
+  .fb_con {
+    width: 45%;
+  }
+
+  .text_sec {
+    margin: 0;
+    height: 328px;
+  }
+
+  .img_sec {
+    position: relative;
+    top: 8%;
+  }
 }
