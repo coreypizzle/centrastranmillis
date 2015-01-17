@@ -281,3 +281,59 @@ a.fbme {
     top: 8%;
   }
 }
+
+@media all and (max-width: 1150px) {
+  .logo {
+    float: none;
+    width: 300px;
+    margin: 0 auto 0 auto;
+  }
+
+  .container {
+    min-height: 960px!important;
+  }
+
+  .fb_con {
+    float: none;
+    margin: 0 auto 50px auto;
+    width: 90%;
+  }
+
+  .fb_con img {
+    margin: 0 auto 0 auto;
+    display: block;
+  }
+
+  .about {
+    float: none;
+    width: 90%;
+    margin: 0 auto 50px auto;
+  }
+
+  .multi {
+    height: 117px;
+    width: 117px
+  }
+
+  .header {
+    height: 180px;
+  }
+
+  .navbar {
+    float: none;
+    margin: -20px auto 25px; auto;
+    font-size: 15pt;
+    text-align: center;
+    height: 50px;
+    display: block;
+  }
+
+  .navbar .ul {
+    height: 50px!important;
+  }
+
+  .li {
+
+  }
+}
+
