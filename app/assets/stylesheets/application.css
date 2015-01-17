@@ -285,34 +285,45 @@ a.fbme {
 @media all and (max-width: 1150px) {
   .logo {
     float: none;
-    width: 300px;
+    width: 255px;
     margin: 0 auto 0 auto;
   }
 
+  .logo a img {
+    width: 255px!important;
+  }
+
   .container {
-    min-height: 960px!important;
+    min-height: 800px!important;
   }
 
   .fb_con {
     float: none;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 25px auto;
     width: 90%;
+    height: 355px;
+    padding: 12px;
   }
 
   .fb_con img {
     margin: 0 auto 0 auto;
     display: block;
+    width: 202px;
+  }
+
+  .fb_con {
+    font-size: 13px;
   }
 
   .about {
     float: none;
     width: 90%;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 0 auto;
   }
 
   .multi {
-    height: 118px;
-    width: 117px
+    height: 78px;
+    width: 70px;
   }
 
   .header {
@@ -332,8 +343,17 @@ a.fbme {
     height: 50px!important;
   }
 
-  .li {
+  li {
+    display: inline!important;
+    margin: 0 10px 0 0;
+  }
 
+  .arrow {
+    display: none;
+  }
+
+  .text_sec {
+    height: 128px;
   }
 }
 
