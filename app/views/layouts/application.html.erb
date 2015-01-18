@@ -6,6 +6,8 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
   <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -15,7 +17,9 @@
     <%= link_to root_path do %>
       <%= image_tag "new_logo.png" %>
     <% end %>
+    <span id="menuOpen">&#9776;</span>
     </div>
+
     <div class="navbar">
       <ul>
         <li>Opening Hours</li>
@@ -26,9 +30,31 @@
     </div>
   </div>
 </div>
+  <div class="mobile_links" id="menuList">
+    <ul>
+      <li class="exit_menu"><span id="menuClose">X</span></li>
+      <li><%= link_to "Home", root_path %></li>
+      <li class="secli">Opening Hours</li>
+      <li><%= link_to "Recruitment", new_application_path %></li>
+      <li class="secli">Contact</li>
+    </ul>
+  </div>
 <div class="container">
+
 <%= yield %>
 </div>
+
+<script type="text/javascript">
+  $("#menuOpen").click(function(){
+    $("#menuList").show()
+  });
+</script>
+
+<script type="text/javascript">
+  $("#menuClose").click(function(){
+    $("#menuList").hide()
+  });
+</script>
 
 </body>
 </html>
