@@ -22,10 +22,9 @@
 
     <div class="navbar">
       <ul>
-        <li>Opening Hours</li>
+        <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Recruitment", new_application_path %></li>
-
-        <li>Contact</li>
+        <li><%= link_to "Contact", contacts_index_path %></li>
       </ul>
     </div>
   </div>
@@ -34,7 +33,7 @@
     <ul>
       <li class="exit_menu"><span id="menuClose">X</span></li>
       <li><%= link_to "Home", root_path %></li>
-      <li class="secli">Opening Hours</li>
+      <li class="secli"><%= link_to "Opening Hours", opening_index_path %></li>
       <li><%= link_to "Recruitment", new_application_path %></li>
       <li class="secli">Contact</li>
     </ul>

@@ -420,7 +420,7 @@ select {
   .container {
     width: 100%;
     border-radius: 0;
-    padding: 0;
+    padding: 0 0 12px 0;
   }
 
   .mobile_links ul {
@@ -450,6 +450,57 @@ select {
 
   .logo span {
     display: inline-block;
+  }
+
+  .apply_form {
+    width: 100%;
+  }
+
+  .apply_form .img_header {
+    width: 450px;
+    margin: 30px 0 0 28px;
+  }
+
+  .field {
+    text-align: left;
+  }
+
+
+  label {
+    text-align: center;
+    margin: 0 auto 10px auto;
+    padding: 0 0 0 25px;
+  }
+
+  .field input {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 250px;
+  }
+
+  input.submit {
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .text {
+    float: none;
+    width: 300px;
+  }
+
+  textarea.text {
+    width: 250px;
+    margin: 0 auto 0 auto;
+    display: block;
+  }
+
+  label {
+    display: block;
+    float: none;
+    text-align: left;
   }
 
 }

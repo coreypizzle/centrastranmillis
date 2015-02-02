@@ -3,6 +3,10 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
+  get 'opening/index'
+
+  get 'contacts/index'
+
   resources "applications", only: [:new, :create]
 
 
