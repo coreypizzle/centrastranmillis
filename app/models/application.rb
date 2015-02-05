@@ -29,6 +29,11 @@ class Application < MailForm::Base
   attribute :descriptionofrolethree
   attribute :reasonforleavingthree
 
+  attribute :referee1
+  attribute :refereecontact1
+  attribute :referee2
+  attribute :refereecontact2
+
 
   # Declare the e-mail headers. It accepts anything the mail method
   # in ActionMailer accepts.
