@@ -150,7 +150,6 @@ a {
 }
 
 a:hover {
-  color: #eee;
   font-weight: bold;
 }
 
@@ -267,6 +266,22 @@ select {
   display: none;
 }
 
+.contact_left {
+  float: left;
+}
+
+.contact_right {
+  float: right;
+}
+
+.center_contact {
+  font-size: 25px;
+  height: auto;
+  width: auto;
+  margin: 125px auto 0 auto;
+}
+
+
 @media all and (max-width: 1505px) {
   .about {
     width: 50%;
@@ -294,11 +309,45 @@ select {
   }
 }
 
+@media all and (max-width: 1250px) {
+    .center_contact {
+    text-align: center;
+    margin: 0;
+    padding: 75px 0 0 0;
+    font-size: 17px;
+  }
+
+  .contact_left {
+    float: none;
+    margin: 0 0 75px 0;
+  }
+
+  .contact_right {
+    float: none;
+  }
+}
+
 @media all and (max-width: 1150px) {
   .logo {
     float: none;
     width: 255px;
     margin: 0 auto 0 auto;
+  }
+
+  .center_contact {
+    text-align: center;
+    margin: 0;
+    padding: 75px 0 0 0;
+    font-size: 17px;
+  }
+
+  .contact_left {
+    float: none;
+    margin: 0 0 75px 0;
+  }
+
+  .contact_right {
+    float: none;
   }
 
   .logo a img {
