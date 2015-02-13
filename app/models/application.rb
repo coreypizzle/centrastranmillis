@@ -40,7 +40,7 @@ class Application < MailForm::Base
   def headers
     {
       :subject => "My Contact Form",
-      :to => "coreypizzle@gmail.com",
+      :to => "mcgoveranmaloneroad@centra.co.uk",
       :from => %("Automated Service" <mcgoveranmaloneroad@centra.co.uk>)
     }
   end
