@@ -30,9 +30,11 @@ class Application < MailForm::Base
   attribute :reasonforleavingthree
 
   attribute :referee1
-  attribute :refereecontact1
+  attribute :refereecontactnumber1
+  attribute :refereecontactemail1
   attribute :referee2
-  attribute :refereecontact2
+  attribute :refereecontactnumber2
+  attribute :refereecontactemail2
 
 
   # Declare the e-mail headers. It accepts anything the mail method

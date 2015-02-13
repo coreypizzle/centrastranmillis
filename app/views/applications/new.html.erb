@@ -8,7 +8,7 @@
     <%= f.input :positionappliedfor, :required => false, :label => false %></br>
   </div>
   <div class="field">
-    <label>Full Name : </label>
+    <label><span class="redtxt">*</span> Full Name : </label>
     <%= f.input :name, :required => false, :label => false %></br>
   </div>
   <div class="field">
@@ -16,7 +16,7 @@
     <%= f.input :telephone, :required => false, :label => false %></br>
   </div>
   <div class="field">
-    <label>Email Address : </label>
+    <label><span class="redtxt">*</span>Email Address : </label>
     <%= f.input :email, :required => false, :label => false %></br></br>
   </div>
   <div class="field_area">
@@ -121,8 +121,12 @@
     <%= f.input :referee1, :required => false, :label => false %></br></br>
   </div>
   <div class="field">
-    <label>Referee Contact : </label>
-    <%= f.input :refereecontact1, :required => false, :label => false %></br></br>
+    <label>Referee Contact Number : </label>
+    <%= f.input :refereecontactnumber1, :required => false, :label => false %></br></br>
+  </div>
+  <div class="field">
+    <label>Referee Contact Email : </label>
+    <%= f.input :refereecontactemail1, :required => false, :label => false %></br></br>
   </div>
   <hr>
   <div class="field">
@@ -130,8 +134,12 @@
     <%= f.input :referee2, :required => false, :label => false %></br></br>
   </div>
   <div class="field">
-    <label>Referee Contact #2 : </label>
-    <%= f.input :refereecontact2, :required => false, :label => false %></br></br>
+    <label>Referee Contact Number #2 : </label>
+    <%= f.input :refereecontactnumber2, :required => false, :label => false %></br></br>
+  </div>
+  <div class="field">
+    <label>Referee Contact Email #2 : </label>
+    <%= f.input :refereecontactemail2, :required => false, :label => false %></br></br>
   </div>
 
   <%= f.button :submit, 'Apply now', :class=> "btn btn-primary marg_bottom submit" %>
