@@ -1,3 +1,29 @@
+/* line 5, C:/Users/Corey/Documents/GitHub/centra/app/assets/stylesheets/home.css.scss */
+.text_sec {
+  height: 275px;
+  margin: 0 0 53px 0;
+  border-radius: 50px;
+  background-color: #7F9469;
+  z-index: 9;
+  position: relative;
+  background-image: url(/assets/no_recruit_img.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 18, C:/Users/Corey/Documents/GitHub/centra/app/assets/stylesheets/home.css.scss */
+.arrow {
+  background-image: url(/assets/arrow.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 198px;
+  width: 189px;
+  position: relative;
+  float: right;
+  z-index: 10;
+  margin: -50px -50px 0 0;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -10,9 +36,10 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
+
 
  html, body {
   margin: 0;
