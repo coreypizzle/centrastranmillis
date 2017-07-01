@@ -7,20 +7,20 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { :host => 'immense-mesa-2465.herokuapp.com' }
 # ActionMailer Config
 # Setup for production - deliveries, no errors raised
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.default :charset => "utf-8"
+#  config.action_mailer.delivery_method = :smtp
+#  config.action_mailer.perform_deliveries = true
+#  config.action_mailer.raise_delivery_errors = false
+#  config.action_mailer.default :charset => "utf-8"
 
-  config.action_mailer.smtp_settings = {
-    :address => 'smtp.postmarkapp.com',
-    :port => "587",
-    :authentication => :plain,
-    :user_name => "0957d2e8-998b-40d9-845c-c0175caf7c91",
-    :password => "0957d2e8-998b-40d9-845c-c0175caf7c91",
-    :enable_starttls_auto => true,
+#  config.action_mailer.smtp_settings = {
+#    :address => 'smtp.postmarkapp.com',
+#    :port => "587",
+#    :authentication => :plain,
+#    :user_name => "0957d2e8-998b-40d9-845c-c0175caf7c91",
+#    :password => "0957d2e8-998b-40d9-845c-c0175caf7c91",
+#    :enable_starttls_auto => true,
 
-  }
+#  }
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
